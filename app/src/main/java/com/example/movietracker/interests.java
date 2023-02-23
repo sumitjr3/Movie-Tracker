@@ -20,7 +20,7 @@ public class interests extends AppCompatActivity {
 
         ArrayList<GridModelClass> modelClassArrayList = new ArrayList<GridModelClass>();
 
-        modelClassArrayList.add(new GridModelClass("text", /*image source*/ R.drawable.));
+
 
         myGridAdapter myGridAdapter = new myGridAdapter(this,modelClassArrayList);
         gridView.setAdapter(myGridAdapter);

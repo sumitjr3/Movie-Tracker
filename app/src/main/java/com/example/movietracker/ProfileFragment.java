@@ -79,33 +79,12 @@ public class ProfileFragment extends android.app.Fragment {
         // Inflate the layout for this fragment
 
         progressBar = rootView.findViewById(R.id.progress_bar);
-        progressText = rootView.findViewById(R.id.progress_text);
         profileImageView = rootView.findViewById(R.id.imageviewProfile);
         profileText = rootView.findViewById(R.id.textviewProfile);
-        interestsButton1 = rootView.findViewById(R.id.buttonOneInterest);
-        interestsButton2 = rootView.findViewById(R.id.buttonTwoInterest);
-        interestsButton3 = rootView.findViewById(R.id.buttonThreeInterest);
-        interestsButton4 = rootView.findViewById(R.id.buttonFourInterest);
-        interestsButton5 = rootView.findViewById(R.id.buttonFiveInterest);
-        interestsButton6 = rootView.findViewById(R.id.buttonSixInterest);
+
         profileSettingButton = rootView.findViewById(R.id.profileSettingButton);
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // set the limitations for the numeric
-                // text under the progress bar
-                if (i <= 100) {
-                    progressText.setText("" + i);
-                    progressBar.setProgress(i);
-                    i++;
-                    handler.postDelayed(this, 200);
-                } else {
-                    handler.removeCallbacks(this);
-                }
-            }
-        }, 200);
+
 
         return rootView;
     }

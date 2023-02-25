@@ -8,7 +8,7 @@
     <item
         android:title="Tracker"
         android:id="@+id/menuTracker"
-        android:icon="@drawable/search_icon"/>
+        android:icon="@drawable/dashboard"/>
     <item
         android:title="Profile"
         android:id="@+id/menuProfile"

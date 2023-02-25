@@ -30,21 +30,6 @@ import java.util.ArrayList;
  */
 public class Homefragment extends android.app.Fragment {
 
-    RecyclerView recyclerView;
-    Integer[] image={R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon,
-            R.drawable.soccer_football_icon,R.drawable.football_icon};
-    String[] name={"1","2","1","2","1","2","1","2","1","2","1","2",
-            "1","2","1","2","1","2","1","2",};
-    LinearLayoutManager linearLayoutManager;
-    cardAdapter cardAdapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -97,25 +82,5 @@ public class Homefragment extends android.app.Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_homefragment, container, false);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-
-        setContentView(R.layout.fragment_homefragment);
-        recyclerView = recyclerView.findViewById(R.id.recyclerView);
-
-        linearLayoutManager = new LinearLayoutManager((Activity) getContext(),LinearLayoutManager.HORIZONTAL,false);
-        cardAdapter = new cardAdapter(image,name);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(cardAdapter);
-
-        super.onActivityCreated(savedInstanceState);
-    }
-
-
-    public void onPointerCaptureChanged(Menu menu) {
-        super.onPrepareOptionsMenu(menu);
     }
 }

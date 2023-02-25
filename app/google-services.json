@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459291095238",
+    "project_id": "bing-tracker",
+    "storage_bucket": "bing-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459291095238:android:04359e58b02daf5b30e7c7",
+        "android_client_info": {
+          "package_name": "com.example.movietracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459291095238-2ql3cmosiute2l9df1htp7p9hpf4l62b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvlhg2pXNgIQZ0JkY5kHkXTJTIIls_FRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459291095238-2ql3cmosiute2l9df1htp7p9hpf4l62b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
